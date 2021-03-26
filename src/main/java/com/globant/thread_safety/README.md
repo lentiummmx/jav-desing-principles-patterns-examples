@@ -1,0 +1,1 @@
+- see: https://www.baeldung.com/java-thread-safety
