@@ -1,0 +1,1 @@
+- see: https://examples.javacodegeeks.com/java-interface-example/
