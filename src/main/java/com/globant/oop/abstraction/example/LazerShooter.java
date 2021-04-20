@@ -2,8 +2,18 @@ package com.globant.oop.abstraction.example;
 
 public interface LazerShooter {
 
-    String shoot();
+    default String shoot() {
+        String shoot = "Phewww bang bang buumm";
+        System.out.println(shoot);
+        return shoot;
+    }
 
-    void reload();
+    default void reload() {
+        System.out.println("Reloading...");
+    }
+
+    default void safetyOn() {
+        System.out.println("The safety is now on!");
+    }
 
 }

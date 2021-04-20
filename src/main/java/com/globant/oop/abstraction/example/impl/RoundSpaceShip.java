@@ -15,13 +15,13 @@ public class RoundSpaceShip extends SpaceShip implements LazerShooter, Transport
 
     @Override
     public String shoot() {
-        System.out.println("We're shooting");
+        System.out.println("We're shooting phewwwww");
         return "phewwwww";
     }
 
     @Override
     public void reload() {
-        System.out.println("Reloading...");
+        System.out.println("Reloading.....");
     }
 
     @Override

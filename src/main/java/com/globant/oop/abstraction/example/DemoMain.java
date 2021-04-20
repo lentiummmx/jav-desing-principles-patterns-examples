@@ -6,11 +6,17 @@ import com.globant.oop.abstraction.example.impl.RoundSpaceShip;
 public class DemoMain {
     public static void main(String[] args) {
         PyramidSpaceShip pyramidSpaceShip = new PyramidSpaceShip();
-        RoundSpaceShip roundSpaceShip = new RoundSpaceShip();
 
         pyramidSpaceShip.avoidingAsteroids();
         pyramidSpaceShip.landOnPlanet("Mars");
         pyramidSpaceShip.takeOffFromPlanet();
+        pyramidSpaceShip.shoot();
+        pyramidSpaceShip.reload();
+        pyramidSpaceShip.safetyOn();
+
+        System.out.println("----------");
+
+        RoundSpaceShip roundSpaceShip = new RoundSpaceShip();
 
         roundSpaceShip.landOnPlanet("Pluto");
         roundSpaceShip.takeOffFromPlanet();
@@ -19,5 +25,6 @@ public class DemoMain {
         System.out.println("We got " + s + " unloaded!");
         roundSpaceShip.shoot();
         roundSpaceShip.reload();
+        roundSpaceShip.safetyOn();
     }
 }
